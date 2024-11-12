@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .email-container {
+        max-width: 600px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+      }
+      .header {
+        padding: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        background: linear-gradient(180deg, #e3e9f5, #dee6f1, white);
+      }
+      .content {
+        padding: 20px;
+        color: #333333;
+        text-align: center;
+        background: linear-gradient(360deg, #e3e9f5, #dee6f1, white);
+      }
+      .content h1 {
+        font-family: "Comic Sans MS", cursive;
+        color: #e74c3c;
+        font-size: 32px;
+        margin: 5px 0;
+      }
+      .content p {
+        font-size: 16px;
+        margin: 10px 0;
+        line-height: 1.5;
+      }
+      .content .urgent {
+        font-size: 18px;
+        color: #ff0000;
+        font-weight: bold;
+      }
+      .footer {
+        background: #9c27b0;
+        color: #ffffff;
+        text-align: center;
+        padding: 8px;
+        font-size: 12px;
+      }
+      .footer a {
+        color: #ff6b6b;
+        text-decoration: none;
+      }
+      @keyframes push {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+      }
+      .animated-emoji {
+        display: inline-block;
+        animation: push 0.8s ease-in-out infinite;
+        font-size: 36px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="header">
+        <div style="width: 130px; height: 40px; margin: 0 auto">
+          <img
+            src="https://legalremit.com/image/logo2.png"
+            alt="Company Logo"
+            style="width: 100%; height: 100%"
+          />
+        </div>
+      </div>
+
+      <div class="content">
+        <h1>
+          <span class="animated-emoji">⚠️</span> Invalid Recipient Details
+          <span class="animated-emoji">⚠️</span>
+        </h1>
+        <p class="urgent">
+          We attempted to process your transfer but were unsuccessful.
+        </p>
+        <p>
+          This could be due to incorrect account details. Please confirm with your recipient or provide alternative account information via our live chat.
+        </p>
+        <p style="font-size: 16px; font-weight: bold; color: #e74c3c">
+          Please verify the recipient's details to avoid further delays.
+        </p>
+      </div>
+
+      <div class="footer">
+        <p>
+          You received this email because you're a valued member of our
+          community.
+          <br />
+          <span style="font-size: 14px"
+            >For any questions, feel free to contact our support team.</span
+          >
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://www.facebook.com/legalremit"
+            title="Facebook"
+            style="
+              text-decoration: none;
+              color: #ffffff;
+              margin: 0 10px;
+              font-size: 1.5em;
+            "
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/legalremit/"
+            title="LinkedIn"
+            style="
+              text-decoration: none;
+              color: #ffffff;
+              margin: 0 10px;
+              font-size: 1.5em;
+            "
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/legalremit_/"
+            title="Instagram"
+            style="
+              text-decoration: none;
+              color: #ffffff;
+              margin: 0 10px;
+              font-size: 1.5em;
+            "
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://wa.me/61419850130"
+            title="WhatsApp"
+            style="
+              text-decoration: none;
+              color: #ffffff;
+              margin: 0 10px;
+              font-size: 1.5em;
+            "
+            ><i class="fab fa-whatsapp"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
