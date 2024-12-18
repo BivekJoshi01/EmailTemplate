@@ -10,6 +10,7 @@
     <style>
       body {
         font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
       }
       .email-container {
         max-width: 600px;
@@ -18,6 +19,7 @@
         overflow: hidden;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         position: relative;
+        margin: 20px auto;
       }
       .header {
         padding: 20px;
@@ -49,9 +51,8 @@
         font-weight: bold;
       }
       .footer {
-        background: #9c27b0;
+        background: linear-gradient(135deg, #ee51ff 0%, #4ba1db 100%);
         color: #ffffff;
-        text-align: center;
         padding: 8px;
         font-size: 12px;
       }
@@ -73,6 +74,16 @@
         display: inline-block;
         animation: push 0.8s ease-in-out infinite;
         font-size: 36px;
+      }
+      .social-icons {
+        text-align: center;
+        padding: 10px;
+      }
+      .social-icons a {
+        color: #7f7f7f;
+        font-size: 1.5em;
+        margin: 0 8px;
+        text-decoration: none;
       }
     </style>
   </head>
@@ -108,61 +119,70 @@
       </div>
 
       <div class="footer">
-        <p>
-          You received this email because you're a valued member of our
-          community.
-          <br />
-          <span style="font-size: 14px"
-            >For any questions, feel free to contact our support team.</span
-          >
-        </p>
-        <div class="social-icons">
-          <a
-            href="https://www.facebook.com/legalremit"
-            title="Facebook"
-            style="
-              text-decoration: none;
-              color: #ffffff;
-              margin: 0 10px;
-              font-size: 1.5em;
-            "
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/legalremit/"
-            title="LinkedIn"
-            style="
-              text-decoration: none;
-              color: #ffffff;
-              margin: 0 10px;
-              font-size: 1.5em;
-            "
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/legalremit_/"
-            title="Instagram"
-            style="
-              text-decoration: none;
-              color: #ffffff;
-              margin: 0 10px;
-              font-size: 1.5em;
-            "
-            ><i class="fab fa-instagram"></i
-          ></a>
-          <a
-            href="https://wa.me/61419850130"
-            title="WhatsApp"
-            style="
-              text-decoration: none;
-              color: #ffffff;
-              margin: 0 10px;
-              font-size: 1.5em;
-            "
-            ><i class="fab fa-whatsapp"></i
-          ></a>
+        <div
+          style="
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: 'wrap';
+          "
+        >
+
+          <div>
+            <h2>At your fingertips</h2>
+            <div style="font-size: 16px">
+              Stay up to date with current exchange rates and <br />track your
+              transfers wherever you go. Download <br />today and make life that
+              much easier.
+            </div>
+            <br />
+            <div style="display: flex; gap: 1rem">
+              <div style="width: 100px; height: 37px">
+                <img
+                  src="https://legalremit-dev-files.s3.ap-southeast-2.amazonaws.com/apple-store.png"
+                  style="width: 100%; height: 100%"
+                  alt="Download on the Apple Store"
+                />
+              </div>
+              <div style="width: 100px; height: 37px">
+                <img
+                  src="https://legalremit-dev-files.s3.ap-southeast-2.amazonaws.com/google-play.png"
+                  style="width: 100%; height: 100%"
+                  alt="Get it on Google Play"
+                />
+              </div>
+            </div>
+          </div>
+          <div style="width: 300px; height: 300px">
+            <img
+              src="https://legalremit-dev-files.s3.ap-southeast-2.amazonaws.com/mobile-animation-template.gif"
+              style="width: 100%; height: 100%; transform: scaleX(-1) rotate(0deg)"
+            />
+          </div>
         </div>
       </div>
+
+    </div>
+
+    <div class="social-icons">
+      <div style="color: #606060">
+        You received this email because you're a valued member of our community.
+        <br />
+        For any questions, feel free to contact our support team.
+      </div>
+      <br />
+      <a href="https://www.facebook.com/legalremit" title="Facebook"
+        ><i class="fab fa-facebook"></i
+      ></a>
+      <a href="https://www.linkedin.com/in/legalremit/" title="LinkedIn"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+      <a href="https://www.instagram.com/legalremit_/" title="Instagram"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a href="https://wa.me/61419850130" title="WhatsApp"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
     </div>
   </body>
 </html>
