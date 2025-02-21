@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .email-container {
+            max-width: 700px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+
+        .header {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(180deg, #e3e9f5, #dee6f1, white);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 10px;
+            text-align: center;
+            color: #333333;
+            background: linear-gradient(360deg, #e3e9f5, #dee6f1, white);
+        }
+
+        .content h1 {
+            font-family: "Comic Sans MS", cursive;
+            color: #e74c3c;
+            font-size: 32px;
+            margin: 0;
+        }
+
+        .content p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+
+        .urgent {
+            color: #AD72F1;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #ee51ff 0%, #4ba1db 100%);
+            color: #ffffff;
+            padding: 8px;
+            font-size: 12px;
+        }
+
+        .footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .social-icons {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .social-icons a {
+            color: #7f7f7f;
+            font-size: 1.5em;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+
+        @keyframes push {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        .animated-emoji {
+            display: inline-block;
+            animation: push 0.8s ease-in-out infinite;
+            font-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-container">
+        <div class="header">
+            <img src="https://legalremit.com/image/logo2.png" alt="Company Logo" style="width: 120px; height: auto" />
+        </div>
+
+        <div class="content">
+            <h1>
+                <span class="animated-emoji">🚨</span> Attention Required !! <span class="animated-emoji">🚨</span>
+            </h1>
+            <h4>Dear, (First Name)</h4>
+            <p class="urgent">
+                Transaction <span style="color:#38B6FF;text-decoration: underline;">(Transaction No)</span> needs more info to proceed
+            </p>
+            <p>
+                Log in to your Legal Remit account for details.
+            </p>
+            <a href="https://yourwebsite.com/profile" class="cta-button">Go to Profile</a>
+        </div>
+        <div class="footer">
+            <div style="
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: 'wrap';
+          ">
+                <div>
+                    <h2>At your fingertips</h2>
+                    <div style="font-size: 16px">
+                        Stay up to date with current exchange rates and <br />track your
+                        transfers wherever you go. Download <br />today and make life that
+                        much easier.
+                    </div>
+                    <br />
+                    <div style="display: flex; gap: 1rem">
+                        <div style="width: 100px; height: 37px">
+                            <img src="https://legalremit-dev-files.s3.ap-southeast-2.amazonaws.com/apple-store.png"
+                                style="width: 100%; height: 100%" alt="Download on the Apple Store" />
+                        </div>
+                        <div style="width: 100px; height: 37px">
+                            <img src="https://legalremit-dev-files.s3.ap-southeast-2.amazonaws.com/google-play.png"
+                                style="width: 100%; height: 100%" alt="Get it on Google Play" />
+                        </div>
+                    </div>
+                </div>
+                <div style="width: 300px; height: 300px">
+                    <img src="https://legalremit-dev-files.s3.ap-southeast-2.amazonaws.com/mobile-animation-template.gif"
+                        style="
+                width: 100%;
+                height: 100%;
+                transform: scaleX(-1) rotate(0deg);
+              " />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="social-icons">
+        <div style="color: #606060">
+            You received this email because you're a valued member of our community.
+            <br />
+            For any questions, feel free to contact our support team.
+        </div>
+        <br />
+        <a href="https://www.facebook.com/legalremit" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/legalremit/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/legalremit_/" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/61419850130" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    </div>
+</body>
+
+</html>
