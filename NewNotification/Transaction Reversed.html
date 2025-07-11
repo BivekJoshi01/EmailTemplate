@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global</title>
+    <title>Important: Your Recent Transaction Has Been Reversed</title>
 </head>
 
 <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
@@ -15,7 +15,7 @@
         <tr>
             <td align="center" style="padding: 20px 0;">
                 <!-- Content Wrapper Table -->
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="500"
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
                     style="max-width: 600px; background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
 
                     <!-- Header Section -->
@@ -37,13 +37,56 @@
                     <tr>
                         <td align="center"
                             style="padding: 20px; color: #333333; background: linear-gradient(360deg, #e3e9f5, #dee6f1, white); background-color: #e3e9f5;">
-                            <h1 style="font-size: 24px; color: #9c27b0; margin: 5px 0 10px 0;">Transaction Delivered
-                            </h1>
+                            <h1 style="font-size: 24px; color: #FFC107; margin: 5px 0 10px 0;">Important: Your Recent
+                                Transaction Has Been Reversed</h1>
                             <p style="font-size: 16px; margin: 10px 0; line-height: 1.5;">Dear <span
                                     style="font-weight: bold;">[[${userName}]]</span>,</p>
 
-                            <p style="font-size: 14px; color: #666; line-height: 1.5;">
-                                We look forward to serving you again soon. Have a wonderful day!
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                We are writing to inform you that your recent transaction (<strong
+                                    style="color: #9c27b0;">[[${transactionNumber}]]</strong>) to <strong
+                                    style="color: #9c27b0;">[[${recipientFirstName}]]</strong> has been reversed.
+                            </p>
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                This reversal may have occurred for various reasons, such as incorrect recipient
+                                details, issues with the receiving bank, or other compliance requirements.
+                            </p>
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                We understand this may be inconvenient, and we are here to help you resolve this. You
+                                now have two options to proceed:
+                            </p>
+
+                            <!-- Options Section -->
+                            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                                style="margin-top: 20px;">
+                                <tr>
+                                    <td style="padding: 10px 0;">
+                                        <h2
+                                            style="font-size: 18px; color: #4CAF50; margin: 0 0 10px 0; text-align: left;">
+                                            Option 1: Request a Refund</h2>
+                                        <p style="font-size: 14px; line-height: 1.5; text-align: left;">
+                                            You can choose to have the full amount of your transaction refunded to your
+                                            original payment method.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 10px 0;">
+                                        <h2
+                                            style="font-size: 18px; color: #2196F3; margin: 0 0 10px 0; text-align: left;">
+                                            Option 2: Initiate a New Transaction</h2>
+                                        <p style="font-size: 14px; line-height: 1.5; text-align: left;">
+                                            You can re-initiate the transfer with updated recipient details. Since we
+                                            have already received your payment for the previous transaction, you will
+                                            not need to transfer new funds. Please upload the payment deduction evidence
+                                            from your original transaction to Legal Remit when prompted.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p style="font-size: 14px; color: #666; line-height: 1.5; margin-top: 20px;">
+                                Thank you for your continued trust in Legal Remit.
                             </p>
                         </td>
                     </tr>

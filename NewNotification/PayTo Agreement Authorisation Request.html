@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global</title>
+    <title>Action Required: Authorise PayTo Agreement for Transaction [[${transactionNo}]]</title>
 </head>
 
 <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
@@ -15,7 +15,7 @@
         <tr>
             <td align="center" style="padding: 20px 0;">
                 <!-- Content Wrapper Table -->
-                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="500"
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="600"
                     style="max-width: 600px; background-color: #ffffff; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
 
                     <!-- Header Section -->
@@ -37,13 +37,102 @@
                     <tr>
                         <td align="center"
                             style="padding: 20px; color: #333333; background: linear-gradient(360deg, #e3e9f5, #dee6f1, white); background-color: #e3e9f5;">
-                            <h1 style="font-size: 24px; color: #9c27b0; margin: 5px 0 10px 0;">Transaction Delivered
-                            </h1>
+                            <h1 style="font-size: 24px; color: #FFC107; margin: 5px 0 10px 0;">⚠️ Action Required:
+                                Authorise PayTo Agreement</h1>
                             <p style="font-size: 16px; margin: 10px 0; line-height: 1.5;">Dear <span
-                                    style="font-weight: bold;">[[${userName}]]</span>,</p>
+                                    style="font-weight: bold;">[[${firstName}]]</span>,</p>
 
-                            <p style="font-size: 14px; color: #666; line-height: 1.5;">
-                                We look forward to serving you again soon. Have a wonderful day!
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                Thank you for initiating your recent transaction with Legal Remit.
+                            </p>
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                We are currently awaiting your authorisation to proceed with the payment via PayTo.
+                                Without this authorisation, we cannot complete your remittance request. Please note that
+                                your PayTo agreement will expire in 23 minutes from the time of agreement creation.
+                            </p>
+
+                            <!-- Where to Find PayTo Agreements Section -->
+                            <h2 style="font-size: 18px; color: #4CAF50; margin: 20px 0 10px 0; text-align: left;">Where
+                                to Find PayTo Agreements</h2>
+                            <ul
+                                style="font-size: 14px; line-height: 1.5; text-align: left; padding-left: 20px; margin-bottom: 20px;">
+                                <li style="margin-bottom: 10px;">
+                                    <strong style="color: #2196F3;">Mobile Banking App:</strong>
+                                    Most major Australian banks allow you to view, authorise, pause, or cancel PayTo
+                                    agreements directly in their mobile banking apps. Look for a section called “PayTo
+                                    Agreements” or similar, often under the “Payments” or “Settings” menu. They often
+                                    send a notification on the mobile banking app.
+                                </li>
+                                <li>
+                                    <strong style="color: #2196F3;">Internet Banking (Web Browser):</strong>
+                                    You can also access and manage PayTo agreements via your bank’s internet banking
+                                    portal. The agreements are usually found under “Payments,” “Transfers,” or a
+                                    dedicated “PayTo” section.
+                                </li>
+                            </ul>
+
+                            <!-- How to Authorise a PayTo Agreement Section -->
+                            <h2 style="font-size: 18px; color: #4CAF50; margin: 20px 0 10px 0; text-align: left;">How to
+                                Authorise a PayTo Agreement</h2>
+                            <ol
+                                style="font-size: 14px; line-height: 1.5; text-align: left; padding-left: 20px; margin-bottom: 20px;">
+                                <li style="margin-bottom: 10px;">
+                                    <strong style="color: #2196F3;">Log in</strong> to your bank’s mobile app or
+                                    internet banking.
+                                </li>
+                                <li style="margin-bottom: 10px;">
+                                    <strong style="color: #2196F3;">Navigate</strong> to the “PayTo Agreements” section.
+                                </li>
+                                <li style="margin-bottom: 10px;">
+                                    <strong style="color: #2196F3;">Review</strong> any new or pending agreements. These
+                                    will typically appear at the top of the list or in a section marked “Action
+                                    Required.”
+                                </li>
+                                <li style="margin-bottom: 10px;">
+                                    <strong style="color: #2196F3;">Select</strong> the agreement you wish to authorise.
+                                </li>
+                                <li style="margin-bottom: 10px;">
+                                    <strong style="color: #2196F3;">Check the details</strong> (amount, frequency,
+                                    merchant, etc.) to ensure they are correct.
+                                </li>
+                                <li style="margin-bottom: 10px;">
+                                    <strong style="color: #2196F3;">Tap or click “Authorise”</strong> (or “Approve”).
+                                    You may be asked to confirm your identity using a security code, app PIN, or
+                                    biometric authentication.
+                                </li>
+                                <li>
+                                    <strong style="color: #2196F3;">Confirmation</strong> will be shown once the
+                                    agreement is active.
+                                </li>
+                            </ol>
+
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5; text-align: left;">
+                                <strong style="color: #9c27b0;">Mobile Banking or Internet Banking, which needs to be
+                                    used?</strong><br>
+                                Most banks support both: You can authorise and manage PayTo agreements in either the
+                                mobile app or internet banking. There is no need to visit a branch or use only one
+                                channel—choose whichever is more convenient for you.
+                            </p>
+
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5; text-align: left;">
+                                <strong style="color: #FFC107;">🔒 Why This is Important</strong><br>
+                                Legal Remit requires a one-off direct debit authority to process your payment securely.
+                                Once authorised, this agreement remains active until the transaction is completed or the
+                                set time limit expires.
+                            </p>
+
+                            <p
+                                style="font-size: 14px; color: #666; line-height: 1.5; margin-top: 20px; text-align: left;">
+                                If you require assistance in authorising the PayTo agreement, kindly contact our
+                                customer support team promptly.
+                            </p>
+                            <p
+                                style="font-size: 14px; color: #666; line-height: 1.5; margin-bottom: 20px; text-align: left;">
+                                For further information about PayTo, please visit <a href="https://payto.com.au"
+                                    style="color: #007bff; text-decoration: none;">payto.com.au</a>.
+                            </p>
+                            <p style="font-size: 14px; color: #666; line-height: 1.5; text-align: left;">
+                                Thank you for your prompt action.
                             </p>
                         </td>
                     </tr>

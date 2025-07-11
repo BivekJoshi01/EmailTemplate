@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global</title>
+    <title>Transaction Update: Payment Processed for Transaction [[${transactionNumber}]]</title>
 </head>
 
 <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
@@ -37,13 +37,24 @@
                     <tr>
                         <td align="center"
                             style="padding: 20px; color: #333333; background: linear-gradient(360deg, #e3e9f5, #dee6f1, white); background-color: #e3e9f5;">
-                            <h1 style="font-size: 24px; color: #9c27b0; margin: 5px 0 10px 0;">Transaction Delivered
-                            </h1>
+                            <h1 style="font-size: 24px; color: #4CAF50; margin: 5px 0 10px 0;">Transaction Update:
+                                Payment Processed</h1>
                             <p style="font-size: 16px; margin: 10px 0; line-height: 1.5;">Dear <span
-                                    style="font-weight: bold;">[[${userName}]]</span>,</p>
+                                    style="font-weight: bold;">[[${customerName}]]</span>,</p>
 
-                            <p style="font-size: 14px; color: #666; line-height: 1.5;">
-                                We look forward to serving you again soon. Have a wonderful day!
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                We are pleased to inform you that your recent transaction (<strong
+                                    style="color: #9c27b0;">[[${transactionNumber}]]</strong>) has been successfully
+                                processed for payment.
+                            </p>
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                Your funds are now on their way and are expected to be delivered to your recipient
+                                within two working days. We will notify you again as soon as the transaction is
+                                completed.
+                            </p>
+
+                            <p style="font-size: 14px; color: #666; line-height: 1.5; margin-top: 20px;">
+                                Thank you for choosing Legal Remit for your transfer needs.
                             </p>
                         </td>
                     </tr>

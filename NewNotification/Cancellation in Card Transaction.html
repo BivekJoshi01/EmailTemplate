@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Global</title>
+    <title>Cancellation Notice: Card Payment Not Received for Transaction [[${transactionNumber}]]</title>
 </head>
 
 <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
@@ -37,13 +37,28 @@
                     <tr>
                         <td align="center"
                             style="padding: 20px; color: #333333; background: linear-gradient(360deg, #e3e9f5, #dee6f1, white); background-color: #e3e9f5;">
-                            <h1 style="font-size: 24px; color: #9c27b0; margin: 5px 0 10px 0;">Transaction Delivered
-                            </h1>
+                            <h1 style="font-size: 24px; color: #FFC107; margin: 5px 0 10px 0;">Cancellation Notice: Card
+                                Payment Not Received</h1>
                             <p style="font-size: 16px; margin: 10px 0; line-height: 1.5;">Dear <span
-                                    style="font-weight: bold;">[[${userName}]]</span>,</p>
+                                    style="font-weight: bold;">[[${customerName}]]</span>,</p>
 
-                            <p style="font-size: 14px; color: #666; line-height: 1.5;">
-                                We look forward to serving you again soon. Have a wonderful day!
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                We are writing to inform you that your recent transaction attempt (<strong
+                                    style="color: #9c27b0;">[[${transactionNumber}]]</strong>) has been cancelled as we
+                                have not yet received the card payment.
+                            </p>
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                This may be due to a variety of reasons, such as a temporary issue with your card
+                                issuer, an incomplete authorization, or a network delay.
+                            </p>
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                To proceed with your transfer, please kindly re-attempt your transaction using your
+                                card. If you encounter any difficulties or require assistance, our customer support team
+                                is available to help.
+                            </p>
+
+                            <p style="font-size: 14px; color: #666; line-height: 1.5; margin-top: 20px;">
+                                Thank you for your understanding and prompt attention to this matter.
                             </p>
                         </td>
                     </tr>
