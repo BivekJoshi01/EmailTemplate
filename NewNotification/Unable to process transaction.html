@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Verify Your Email Address</title>
+    <title>Important Notice: Unable to Process Transaction [[${transactionNumber}]]</title>
 </head>
 
 <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
@@ -36,34 +36,28 @@
                     <!-- Main Content Section -->
                     <tr>
                         <td align="center"
-                            style="padding: 10px; color: #333333; background: linear-gradient(360deg, #e3e9f5, #dee6f1, white); background-color: #e3e9f5;">
-                            <h1 style="font-size: 24px; color: #9c27b0; margin: 5px 0 10px 0;">Verify Your Email Address
-                            </h1>
+                            style="padding: 20px; color: #333333; background: linear-gradient(360deg, #e3e9f5, #dee6f1, white); background-color: #e3e9f5;">
+                            <h1 style="font-size: 24px; color: #FFC107; margin: 5px 0 10px 0;">Important Notice: Unable
+                                to Process Transaction</h1>
                             <p style="font-size: 16px; margin: 10px 0; line-height: 1.5;">Dear <span
-                                    style="font-weight: bold;">[[${userName}]]</span>,</p>
+                                    style="font-weight: bold;">[[${customerName}]]</span>,</p>
 
-                            <p style="font-size: 14px; margin-bottom: 10px; line-height: 1.5;">
-                                Thank you for registering with us! To complete your registration and activate your
-                                account,
-                                please verify your email address by clicking the button below:
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                We regret to inform you that we are currently unable to process your recent transaction
+                                (<strong style="color: #9c27b0;">[[${transactionNumber}]]</strong>).
+                            </p>
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                This is due to compliance reasons which require further review. Please be assured that
+                                your funds are safe and secure.
+                            </p>
+                            <p style="font-size: 14px; margin-bottom: 20px; line-height: 1.5;">
+                                One of our team members will be in touch with you shortly to discuss the specific
+                                details and guide you through any necessary steps to resolve this. We appreciate your
+                                cooperation and understanding in this matter.
                             </p>
 
-                            <!-- Verify Email Button -->
-                            <table role="presentation" cellspacing="0" cellpadding="0" border="0">
-                                <tr>
-                                    <td align="center" style="border-radius: 26px; background-color: #9c27b0;">
-                                        <a href="[[${loginLink}]]" target="_blank"
-                                            style="font-size: 16px; font-family: Arial, sans-serif; color: #ffffff; text-decoration: none; padding: 12px 25px; display: inline-block; font-weight: bold;">
-                                            Verify Email
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
-                            <p style="font-size: 14px; color: #666; line-height: 1; margin-top: 10px;">
-                                If you did not register for an account, please ignore this email.
-                            </p>
-                            <p style="font-size: 14px; color: #666; line-height: 1;">
-                                This verification link will expire in 24 hours.
+                            <p style="font-size: 14px; color: #666; line-height: 1.5; margin-top: 20px;">
+                                Thank you for your continued patience and trust in Legal Remit.
                             </p>
                         </td>
                     </tr>
